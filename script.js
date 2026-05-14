@@ -1,7 +1,3 @@
-// ========================================
-// CRUISE-WAY ENGINEERING - MAIN SCRIPT
-// ========================================
-
 document.addEventListener('DOMContentLoaded', function() {
   initializeNavigation();
   initializeScrollEffects();
@@ -10,10 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
   initializeAnimations();
   initializeFAQ();
 });
-
-// ========================================
-// NAVIGATION FUNCTIONALITY
-// ========================================
 
 function initializeNavigation() {
   const hamburger = document.querySelector('.hamburger');
@@ -38,10 +30,6 @@ function initializeNavigation() {
   });
 }
 
-// ========================================
-// SCROLL EFFECTS
-// ========================================
-
 function initializeScrollEffects() {
   const navbar = document.querySelector('nav');
   
@@ -53,10 +41,6 @@ function initializeScrollEffects() {
     }
   });
 }
-
-// ========================================
-// ANIMATIONS
-// ========================================
 
 function initializeAnimations() {
   const observerOptions = {
@@ -76,7 +60,6 @@ function initializeAnimations() {
     });
   }, observerOptions);
 
-  // Select all elements to animate
   const animateElements = document.querySelectorAll('.animate-on-scroll, .card, .counter, .partner-card, .ceo-card, .testimonial-card, .faq-item');
   
   animateElements.forEach(el => {
@@ -107,9 +90,6 @@ function animateCounter(counter) {
   }, 16);
 }
 
-// ========================================
-// FAQ ACCORDION
-// ========================================
 
 function initializeFAQ() {
   const faqQuestions = document.querySelectorAll('.faq-question');
@@ -134,9 +114,6 @@ function initializeFAQ() {
   });
 }
 
-// ========================================
-// FORM HANDLING & WHATSAPP
-// ========================================
 
 function initializeFormHandling() {
   const form = document.getElementById('contactForm');
@@ -145,25 +122,19 @@ function initializeFormHandling() {
     form.addEventListener('submit', function(e) {
       e.preventDefault();
       
-      // Get form data
       const formData = new FormData(form);
       const data = Object.fromEntries(formData);
       
-      // Validate form
       if (!validateForm(data)) {
         return;
       }
       
-      // Send to WhatsApp
       sendToWhatsApp(data);
       
-      // Show success message
       showSuccessMessage(form);
       
-      // Reset form
       form.reset();
       
-      // Hide success message after 3 seconds
       setTimeout(() => {
         hideSuccessMessage();
       }, 3000);
@@ -172,7 +143,7 @@ function initializeFormHandling() {
 }
 
 function sendToWhatsApp(data) {
-  const phoneNumber = "2348000000000"; // Replace with actual number
+  const phoneNumber = "+2349054633401"; 
   const message = `*New Inquiry from Cruise-Way Website*%0A%0A` +
     `*Name:* ${data.name}%0A` +
     `*Email:* ${data.email}%0A` +
@@ -241,10 +212,6 @@ function hideSuccessMessage() {
   }
 }
 
-// ========================================
-// SET ACTIVE NAV LINK
-// ========================================
-
 function setActiveNavLink() {
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   const navLinks = document.querySelectorAll('.nav-links a');
@@ -258,11 +225,6 @@ function setActiveNavLink() {
     }
   });
 }
-
-// ========================================
-// SMOOTH SCROLL FOR ANCHOR LINKS
-// ========================================
-
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -275,10 +237,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
-
-// ========================================
-// WINDOW RESIZE HANDLER
-// ========================================
 
 window.addEventListener('resize', function() {
   const hamburger = document.querySelector('.hamburger');

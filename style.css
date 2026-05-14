@@ -1,8 +1,3 @@
-/* ========================================
-   CRUISE-WAY ENGINEERING - MAIN STYLESHEET
-   Responsive Design - No :root selectors
-   ======================================== */
-
 * {
   margin: 0;
   padding: 0;
@@ -21,10 +16,6 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
 }
-
-/* ========================================
-   TYPOGRAPHY
-   ======================================== */
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
@@ -52,10 +43,6 @@ a {
   color: inherit;
   transition: color 0.3s ease;
 }
-
-/* ========================================
-   RESPONSIVE TYPOGRAPHY
-   ======================================== */
 
 @media (max-width: 768px) {
   h1 {
@@ -85,10 +72,6 @@ a {
   }
 }
 
-/* ========================================
-   CONTAINER & LAYOUT
-   ======================================== */
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -106,10 +89,6 @@ a {
     padding: 0 10px;
   }
 }
-
-/* ========================================
-   NAVIGATION
-   ======================================== */
 
 nav {
   position: fixed;
@@ -266,10 +245,6 @@ nav {
   }
 }
 
-/* ========================================
-   BUTTONS
-   ======================================== */
-
 .btn {
   display: inline-flex;
   align-items: center;
@@ -325,10 +300,6 @@ nav {
     font-size: 0.9rem;
   }
 }
-
-/* ========================================
-   HERO SECTION
-   ======================================== */
 
 .hero {
   position: relative;
@@ -505,10 +476,6 @@ nav {
   }
 }
 
-/* ========================================
-   SECTIONS
-   ======================================== */
-
 section {
   padding: 80px 0;
 }
@@ -569,10 +536,6 @@ section {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* ========================================
-   GRID LAYOUTS
-   ======================================== */
-
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -605,10 +568,6 @@ section {
     gap: 20px;
   }
 }
-
-/* ========================================
-   CARDS
-   ======================================== */
 
 .card {
   background-color: #ffffff;
@@ -666,10 +625,6 @@ section {
   gap: 12px;
 }
 
-/* ========================================
-   BACKGROUND COLORS
-   ======================================== */
-
 .bg-light {
   background-color: #f7faf8;
 }
@@ -701,10 +656,6 @@ section {
 .text-green {
   color: #0f9d58;
 }
-
-/* ========================================
-   FOOTER
-   ======================================== */
 
 footer {
   background-color: #0d1b14;
@@ -760,10 +711,6 @@ footer p {
   }
 }
 
-/* ========================================
-   UTILITY CLASSES
-   ======================================== */
-
 .mt-20 { margin-top: 20px; }
 .mt-40 { margin-top: 40px; }
 .mt-60 { margin-top: 60px; }
@@ -796,10 +743,6 @@ footer p {
 
 .shadow { box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); }
 .shadow-lg { box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); }
-
-/* ========================================
-   ANIMATIONS
-   ======================================== */
 
 @keyframes slideIn {
   from {
@@ -844,10 +787,6 @@ footer p {
   animation: pulse 2s infinite;
 }
 
-/* ========================================
-   FORM STYLES
-   ======================================== */
-
 input, textarea, select {
   width: 100%;
   padding: 12px 16px;
@@ -875,19 +814,12 @@ label {
   margin-bottom: 20px;
 }
 
-/* ========================================
-   RESPONSIVE IMAGES
-   ======================================== */
 
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
-
-/* ========================================
-   SCROLLBAR STYLING
-   ======================================== */
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -905,10 +837,6 @@ img {
 ::-webkit-scrollbar-thumb:hover {
   background: #0b7a44;
 }
-
-/* ========================================
-   NEW ANIMATIONS & ENHANCEMENTS
-   ======================================== */
 
 .animate-on-scroll {
   opacity: 0;
@@ -975,7 +903,6 @@ img {
   display: inline-block;
 }
 
-/* CEO Section Styles */
 .ceo-section {
   padding: 80px 0;
   background-color: #f9fbf9;
@@ -1034,7 +961,6 @@ img {
   line-height: 1.6;
 }
 
-/* WhatsApp Button */
 .whatsapp-float {
   position: fixed;
   bottom: 30px;
@@ -1058,12 +984,6 @@ img {
   background-color: #128c7e;
   color: #fff;
 }
-
-/* ========================================
-   FAQ & TESTIMONIALS
-   ======================================== */
-
-/* Testimonials */
 .testimonials-section {
   padding: 80px 0;
   background-color: #f9fbf9;
