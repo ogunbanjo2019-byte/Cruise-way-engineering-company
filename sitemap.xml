@@ -1,27 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://cruisewayengineeringlimited.com/</loc>
+    <loc>https://www.cruisewayengineeringlimited.com/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://cruisewayengineeringlimited.com/about.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://cruisewayengineeringlimited.com/services.html</loc>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://cruisewayengineeringlimited.com/projects.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://cruisewayengineeringlimited.com/team.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://cruisewayengineeringlimited.com/contact.html</loc>
-    <priority>0.9</priority>
   </url>
 </urlset>
